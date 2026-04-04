@@ -21,7 +21,7 @@ body {
 }
 
 .home .couple {
-  margin-top: 100px;
+  margin-top: 50px;
   padding-bottom: 400px;
 }
 
@@ -31,6 +31,10 @@ body {
 .home .couple h3 {
   font-family: "Sacramento", sans-serif;
   font-size:3.4rem;
+  color:var(--pink);
+}
+
+.home b {
   color:var(--pink);
 }
 
@@ -207,6 +211,23 @@ home h2,
   color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+/*Heart Bump Animation*/
+.pump-element {
+  /* width: 100px;
+  height: 100px; */
+  /* background-color: #3498db; */
+  border-radius: 50%;
+  margin-top: 2rem;
+  /* Apply the animation */
+  animation: pump 1.5s infinite ease-in-out;
+}
+
+@keyframes pump {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); } /* Grow by 20% */
+  100% { transform: scale(1); }
 }
 
 /* Responsive Breakpoints */
